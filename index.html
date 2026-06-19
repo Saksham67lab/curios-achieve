@@ -55,6 +55,11 @@ margin-bottom:20px;
 color:#b388ff;
 }
 
+a{
+text-decoration:none;
+color:inherit;
+}
+
 .card{
 background:#171717;
 border-radius:15px;
@@ -83,12 +88,7 @@ margin-bottom:10px;
 color:#bbb;
 }
 
-a{
-text-decoration:none;
-color:inherit;
-}
-
-/* non-clickable card style */
+/* static (non clickable) */
 .card.static{
 cursor:default;
 opacity:0.9;
@@ -112,9 +112,7 @@ grid-template-columns:1fr;
 </head>
 <body>
 
-<nav>
-The Curious Archive
-</nav>
+<nav>The Curious Archive</nav>
 
 <section class="hero">
 <h1>Stories That Entertain</h1>
@@ -123,7 +121,7 @@ The Curious Archive
 
 <div class="container">
 
-<!-- CLICKABLE STORY -->
+<!-- STORY -->
 <div>
 <h2 class="section-title">📖 Stories</h2>
 
@@ -139,9 +137,41 @@ The Curious Archive
 
 </div>
 
-<!-- NON CLICKABLE ARTICLE -->
+<!-- NEET -->
 <div>
-<h2 class="section-title">🧠 Psychology & Ideas</h2>
+<h2 class="section-title">🧠 Education</h2>
+
+<a href="neet.html">
+<div class="card">
+<img src="https://picsum.photos/600/300?random=3">
+<div class="card-content">
+<h3>The Exam That Crushes Millions of Dreams (NEET)</h3>
+<p>Read about the biggest exam in India.</p>
+</div>
+</div>
+</a>
+
+</div>
+
+<!-- STUDENT STRESS -->
+<div>
+<h2 class="section-title">🧠 Psychology</h2>
+
+<a href="student-stress.html">
+<div class="card">
+<img src="https://picsum.photos/600/300?random=4">
+<div class="card-content">
+<h3>Why Students Are More Stressed Than Before?</h3>
+<p>Understanding modern student pressure.</p>
+</div>
+</div>
+</a>
+
+</div>
+
+<!-- BUTTERFLY EFFECT (STATIC) -->
+<div>
+<h2 class="section-title">🌍 Ideas</h2>
 
 <div class="card static">
 <img src="https://picsum.photos/600/300?random=2">
