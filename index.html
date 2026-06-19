@@ -50,15 +50,21 @@ grid-template-columns:1fr 1fr;
 gap:30px;
 }
 
+.section-title{
+margin-bottom:20px;
+color:#b388ff;
+}
+
 .card{
 background:#171717;
 border-radius:15px;
 overflow:hidden;
 transition:0.3s;
+cursor:pointer;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
 
 .card img{
@@ -80,12 +86,7 @@ color:#bbb;
 
 a{
 text-decoration:none;
-color:white;
-}
-
-.section-title{
-margin-bottom:20px;
-color:#b388ff;
+color:inherit;
 }
 
 footer{
@@ -93,6 +94,7 @@ text-align:center;
 padding:30px;
 margin-top:40px;
 border-top:1px solid #222;
+color:#aaa;
 }
 
 @media(max-width:768px){
@@ -122,14 +124,11 @@ The Curious Archive
 
 <a href="story1.html">
 <div class="card">
-
 <img src="https://picsum.photos/600/300?random=1">
-
 <div class="card-content">
 <h3>The Last Train At Midnight</h3>
 <p>Click to read the story.</p>
 </div>
-
 </div>
 </a>
 
@@ -139,16 +138,15 @@ The Curious Archive
 
 <h2 class="section-title">🧠 Psychology & Ideas</h2>
 
+<a href="butterfly.html">
 <div class="card">
-
 <img src="https://picsum.photos/600/300?random=2">
-
 <div class="card-content">
 <h3>The Butterfly Effect</h3>
 <p>How small actions create huge consequences.</p>
 </div>
-
 </div>
+</a>
 
 </div>
 
