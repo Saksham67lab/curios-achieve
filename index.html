@@ -65,6 +65,7 @@ background:#171717;
 border-radius:15px;
 overflow:hidden;
 transition:0.3s;
+cursor:pointer;
 }
 
 .card:hover{
@@ -88,12 +89,6 @@ margin-bottom:10px;
 color:#bbb;
 }
 
-/* static (non clickable) */
-.card.static{
-cursor:default;
-opacity:0.9;
-}
-
 footer{
 text-align:center;
 padding:30px;
@@ -110,6 +105,7 @@ grid-template-columns:1fr;
 </style>
 
 </head>
+
 <body>
 
 <nav>The Curious Archive</nav>
@@ -121,65 +117,67 @@ grid-template-columns:1fr;
 
 <div class="container">
 
-<!-- STORY -->
+<!-- 1 -->
 <div>
-<h2 class="section-title">📖 Stories</h2>
+<h2 class="section-title">📖 Story</h2>
 
 <a href="story1.html">
 <div class="card">
 <img src="https://picsum.photos/600/300?random=1">
 <div class="card-content">
 <h3>The Last Train At Midnight</h3>
-<p>Click to read the full story.</p>
+<p>A mysterious journey begins at midnight.</p>
 </div>
 </div>
 </a>
 
 </div>
 
-<!-- NEET -->
+<!-- 2 -->
 <div>
-<h2 class="section-title">🧠 Education</h2>
+<h2 class="section-title">🧠 Exam</h2>
 
 <a href="neet.html">
 <div class="card">
-<img src="https://picsum.photos/600/300?random=3">
+<img src="https://picsum.photos/600/300?random=2">
 <div class="card-content">
-<h3>The Exam That Crushes Millions of Dreams (NEET)</h3>
-<p>Read about the biggest exam in India.</p>
+<h3>NEET: The Exam That Crushes Dreams</h3>
+<p>India’s toughest medical entrance exam.</p>
 </div>
 </div>
 </a>
 
 </div>
 
-<!-- STUDENT STRESS -->
+<!-- 3 -->
 <div>
 <h2 class="section-title">🧠 Psychology</h2>
 
 <a href="student-stress.html">
 <div class="card">
-<img src="https://picsum.photos/600/300?random=4">
+<img src="https://picsum.photos/600/300?random=3">
 <div class="card-content">
 <h3>Why Students Are More Stressed Than Before?</h3>
-<p>Understanding modern student pressure.</p>
+<p>Pressure, competition and expectations.</p>
 </div>
 </div>
 </a>
 
 </div>
 
-<!-- BUTTERFLY EFFECT (STATIC) -->
+<!-- 4 -->
 <div>
 <h2 class="section-title">🌍 Ideas</h2>
 
-<div class="card static">
-<img src="https://picsum.photos/600/300?random=2">
+<a href="butterfly.html">
+<div class="card">
+<img src="https://picsum.photos/600/300?random=4">
 <div class="card-content">
 <h3>The Butterfly Effect</h3>
-<p>How small actions create huge consequences.</p>
+<p>Small actions, huge consequences.</p>
 </div>
 </div>
+</a>
 
 </div>
 
