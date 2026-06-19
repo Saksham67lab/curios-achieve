@@ -10,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -19,78 +19,55 @@ color:white;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
 background:#111;
-border-bottom:1px solid #222;
-}
-
-.logo{
+padding:20px;
+text-align:center;
 font-size:28px;
 font-weight:bold;
 color:#b388ff;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
 .hero{
 text-align:center;
-padding:100px 20px;
+padding:60px 20px;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:20px;
+font-size:50px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
 color:#aaa;
 }
 
 .container{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:20px;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:30px;
 }
 
-.section-title{
-font-size:32px;
-margin-bottom:20px;
-color:#b388ff;
-}
-
 .card{
 background:#171717;
-padding:20px;
 border-radius:15px;
-margin-bottom:20px;
+overflow:hidden;
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-5px);
-background:#222;
 }
 
 .card img{
 width:100%;
-border-radius:10px;
-margin-bottom:15px;
+display:block;
+}
+
+.card-content{
+padding:20px;
 }
 
 .card h3{
@@ -101,159 +78,76 @@ margin-bottom:10px;
 color:#bbb;
 }
 
+a{
+text-decoration:none;
+color:white;
+}
+
+.section-title{
+margin-bottom:20px;
+color:#b388ff;
+}
+
 footer{
 text-align:center;
 padding:30px;
+margin-top:40px;
 border-top:1px solid #222;
-margin-top:50px;
-color:#777;
 }
 
-@media(max-width:800px){
+@media(max-width:768px){
 .container{
 grid-template-columns:1fr;
 }
-
-.hero h1{
-font-size:40px;
-}
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <nav>
-<div class="logo">The Curious Archive</div>
-
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Stories</a></li>
-<li><a href="#">Ideas</a></li>
-<li><a href="#">About</a></li>
-</ul>
+The Curious Archive
 </nav>
 
 <section class="hero">
-<h1>Stories That Entertain.<br>Ideas That Make You Think.</h1>
-<p>Mystery, Psychology, Science & Thought-Provoking Articles</p>
+<h1>Stories That Entertain</h1>
+<p>Psychology, Science and Fiction</p>
 </section>
 
 <div class="container">
 
 <div>
+
 <h2 class="section-title">📖 Stories</h2>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Last Train At Midnight</title>
-
-<style>
-body{
-background:#0a0a0a;
-color:white;
-font-family:Segoe UI,sans-serif;
-max-width:900px;
-margin:auto;
-padding:30px;
-line-height:1.8;
-}
-
-h1{
-color:#b388ff;
-}
-
-img{
-width:100%;
-border-radius:15px;
-margin:25px 0;
-}
-
-a{
-color:#b388ff;
-text-decoration:none;
-font-size:18px;
-}
-
-.story{
-background:#151515;
-padding:25px;
-border-radius:15px;
-margin-top:20px;
-}
-</style>
-</head>
-
-<body>
-
-<a href="index.html">← Back to Home</a>
-
-<div class="story">
-
-<h1>The Last Train At Midnight</h1>
-
-<img src="https://picsum.photos/900/450?random=10">
-
-<p>
-The station was silent.
-Only the cold wind moved through the empty platforms.
-</p>
-
-<p>
-Arjun checked his watch.
-12:00 AM.
-Exactly midnight.
-</p>
-
-<p>
-No trains were scheduled.
-Yet a distant whistle echoed through the darkness.
-</p>
-
-<img src="https://picsum.photos/900/450?random=11">
-
-<p>
-A black train slowly emerged from the fog.
-No lights.
-No passengers.
-No sound.
-</p>
-
-<p>
-The doors opened.
-Arjun stepped inside.
-And the moment he did, everything changed.
-</p>
-
-</div>
-
-</body>
-</html>
-
+<a href="story1.html">
 <div class="card">
-<img src="https://picsum.photos/600/300?random=2">
-<h3>The Forgotten Door</h3>
-<p>A hidden doorway beneath an old school changes everything.</p>
+
+<img src="https://picsum.photos/600/300?random=1">
+
+<div class="card-content">
+<h3>The Last Train At Midnight</h3>
+<p>Click to read the story.</p>
 </div>
+
+</div>
+</a>
 
 </div>
 
 <div>
+
 <h2 class="section-title">🧠 Psychology & Ideas</h2>
 
 <div class="card">
-<img src="https://picsum.photos/600/300?random=3">
+
+<img src="https://picsum.photos/600/300?random=2">
+
+<div class="card-content">
 <h3>The Butterfly Effect</h3>
-<p>How a tiny action can create enormous consequences.</p>
+<p>How small actions create huge consequences.</p>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/600/300?random=4">
-<h3>Why Humans Procrastinate</h3>
-<p>The psychology behind delaying important tasks.</p>
 </div>
 
 </div>
