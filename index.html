@@ -60,7 +60,6 @@ background:#171717;
 border-radius:15px;
 overflow:hidden;
 transition:0.3s;
-cursor:pointer;
 }
 
 .card:hover{
@@ -87,6 +86,12 @@ color:#bbb;
 a{
 text-decoration:none;
 color:inherit;
+}
+
+/* non-clickable card style */
+.card.static{
+cursor:default;
+opacity:0.9;
 }
 
 footer{
@@ -118,8 +123,8 @@ The Curious Archive
 
 <div class="container">
 
+<!-- CLICKABLE STORY -->
 <div>
-
 <h2 class="section-title">📖 Stories</h2>
 
 <a href="story1.html">
@@ -127,26 +132,24 @@ The Curious Archive
 <img src="https://picsum.photos/600/300?random=1">
 <div class="card-content">
 <h3>The Last Train At Midnight</h3>
-<p>Click to read the story.</p>
+<p>Click to read the full story.</p>
 </div>
 </div>
 </a>
 
 </div>
 
+<!-- NON CLICKABLE ARTICLE -->
 <div>
-
 <h2 class="section-title">🧠 Psychology & Ideas</h2>
 
-<a href="butterfly.html">
-<div class="card">
+<div class="card static">
 <img src="https://picsum.photos/600/300?random=2">
 <div class="card-content">
 <h3>The Butterfly Effect</h3>
 <p>How small actions create huge consequences.</p>
 </div>
 </div>
-</a>
 
 </div>
 
